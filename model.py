@@ -11,8 +11,6 @@ class LogisticRegression:
         #Xw + bias
         z = np.dot(X,self.weights) + self.bias
         return self.sigmoid(z)
-
-    # pick up from here
     def predict(self,X,threshold=0.5):
         probabilities = self.predict_proba(X)
         return (probabilities >= threshold).astype(int)

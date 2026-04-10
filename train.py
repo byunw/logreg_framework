@@ -1,8 +1,6 @@
 import numpy as np
-from model import LogisticRegression
 
 def compute_loss(y,p):
-
     #come back to these next 2 lines of code
     # epsilon = 1e-15
     # p = np.clip(p, epsilon, 1 - epsilon)
@@ -18,18 +16,11 @@ def train(model,X,y,lr=0.01,epochs=1,verbose=True):
         loss = compute_loss(y,p)
         loss_history.append(loss)
         dw = (X.T @ (p-y)) / n_samples
-        # print(dw)
         db = np.mean(p-y)
-        # print(db)
 
         #weights/bias update
         model.weights -= lr * dw
         model.bias -= lr * db
-
-        # print(model.weights)
-        # print(model.bias)
-    # print(loss_history)
-
 
 #test code1
 #training data samples

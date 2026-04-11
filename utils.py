@@ -7,8 +7,7 @@ def save_model(model,filepath):
 def load_model(filepath):
     parameters = np.load(filepath)
     weights = parameters["weights"]
-    #bias = float(parameters["bias"]
-    bias = parameters["bias"]
+    bias = float(parameters["bias"])
     model = LogisticRegression(weights.shape[0])
     model.weights = weights
     model.bias = bias

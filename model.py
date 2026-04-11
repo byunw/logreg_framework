@@ -16,33 +16,6 @@ class LogisticRegression:
         return (probabilities >= threshold).astype(int)
 
 
-# model = LogisticRegression(3)
-# #test code for the model creation code
-# assert np.all(model.weights==0)
-# assert model.bias == 0
-#
-# #test code for predict_prob()
-# X = np.array([[25,5000,3000],[40,8000,3000],[3,6,4000]])
-# probabilities = model.predict_proba(X)
-# assert probabilities[0,0] == 0.5
-# assert probabilities[1,0] == 0.5
-# assert probabilities[2,0] == 0.5
-#
-# classify_result = model.predict(X)
-# assert classify_result[0,0] == 0
-# assert classify_result[1,0] == 0
-# assert classify_result[2,0] == 0
-# print(classify_result)
-#write once more test code for model.py
-# model = LogisticRegression(3)
-# assert np.all(model.weights==1)
-# assert model.bias == 0
-# X = np.array([[25,5000,3000],[40,8000,3000],[3,6,4000]])
-# probabilites = model.predict_proba(X)
-# assert probabilites[0,0] == 1
-# classify_result = model.predict(X)
-# assert classify_result[0,0] == 1
-
 
 
 

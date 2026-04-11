@@ -22,36 +22,6 @@ def train(model,X,y,lr=0.01,epochs=1,verbose=True):
         model.weights -= lr * dw
         model.bias -= lr * db
 
-#test code1
-#training data samples
-# X = np.array([[25,5000,3000],[40,8000,3000]])
-# #truth labels for above training datasamples
-# y = np.array([
-#     [1],
-#     [1],
-# ]
-# )
-# model1 = LogisticRegression(3)
-# p = model1.predict_proba(X)
-# assert p[0,0] == 0.5
-# assert p[1,0] == 0.5
-# binary_cross_entropy_loss = compute_loss(y,p)
-# print(binary_cross_entropy_loss)
-# assert binary_cross_entropy_loss > 0.6
-# assert binary_cross_entropy_loss < 0.7
-
-#test code2
-# X = np.array([[25,5000,3000],[40,8000,3000]])
-# y = np.array([
-#     [1],
-#     [1],
-# ])
-#
-# model2 = LogisticRegression(3)
-# p = model2.predict_proba(X)
-# print(p)
-# train(model2,X,y)
-
 
 
 

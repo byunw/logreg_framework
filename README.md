@@ -17,4 +17,5 @@ Woosuk Byun
    .
    X3 truth labeln
 
+## How to use train/predict via CLI
 

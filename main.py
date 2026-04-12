@@ -9,13 +9,15 @@ def main():
     parser.add_argument("--mode",choices=["train","predict"],required=True)
     parser.add_argument("--data",required=True)
     parser.add_argument("--model",required=True)
+    parser.add_argument("--epochs",type=int,default=100)
+    parser.add_argument("--lr",type=float,default=0.01)
 
     args = parser.parse_args()
     X,y = load_txt(args.data)
 
     if args.mode == "train":
        model = LogisticRegression(X.shape[1])
-       train(model,X,y)
+       train(model,X,y,args.lr,args.epochs)
        save_model(model,args.model)
        print("model saved!")
 

@@ -20,6 +20,10 @@ def main():
        train(model,X,y,args.lr,args.epochs)
        save_model(model,args.model)
        print("model saved!")
+       print("saved model weights: ")
+       print(model.weights)
+       print("saved model bias: ")
+       print(model.bias)
 
     if args.mode == "predict":
         model = load_model(args.model)

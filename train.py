@@ -1,9 +1,8 @@
 import numpy as np
 
 def compute_loss(y,p):
-    #come back to these next 2 lines of code
-    # epsilon = 1e-15
-    # p = np.clip(p, epsilon, 1 - epsilon)
+    epsilon = 1e-15
+    p = np.clip(p, epsilon, 1 - epsilon)
     loss = -np.mean(y * np.log(p) + (1 - y) * np.log(1 - p))
     return loss
 

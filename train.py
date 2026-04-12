@@ -20,6 +20,8 @@ def train(model,X,y,lr=0.01,epochs=1,verbose=True):
         #weights/bias update
         model.weights -= lr * dw
         model.bias -= lr * db
+    print("Loss history: ")
+    print(loss_history)
 
 
 

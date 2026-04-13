@@ -9,7 +9,7 @@ Woosuk Byun
         -train.py
         -utils.py
 
-## Train Data Format
+## Train Data Format (.txt)
    X1 truthlabel1
    X2 truthlabel2
    .
@@ -17,7 +17,7 @@ Woosuk Byun
    .
    X3 truthlabeln
 
-## Test Data Format
+## Test Data Format (.txt)
    X1 truthlabel1
    X2 truthlabel2
    .

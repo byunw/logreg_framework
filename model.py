@@ -2,7 +2,6 @@ import numpy as np
 
 class LogisticRegression:
     def __init__(self,num_features):
-        # self.weights = np.zeros((num_features,1))
         self.weights = np.zeros((num_features,1))
         self.bias = 0.0
     def sigmoid(self,z):
